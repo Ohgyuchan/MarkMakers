@@ -29,8 +29,7 @@ public class FeedWrite extends AppCompatActivity {
         btn_fd_cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FeedWrite.this, UserMain.class);
-                startActivity(intent);
+                finish();
             }
         });
 
