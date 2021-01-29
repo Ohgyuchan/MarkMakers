@@ -2,10 +2,6 @@ package com.example.bemysonju2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6c146771197c4960a37e42a4d98c5bc5356337e5
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;

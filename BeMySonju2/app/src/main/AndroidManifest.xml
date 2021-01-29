@@ -10,13 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeMySonju2">
 <<<<<<< HEAD
-        <activity android:name=".Help_Feed"></activity>
+        <activity android:name=".FeedList"></activity>
 =======
         <activity android:name=".VcActivity"></activity>
-        <activity
-            android:name=".FeedList"
-            android:label="@string/title_activity_feed_list"
-            android:theme="@style/Theme.BeMySonju2.NoActionBar" />
         <activity android:name=".FeedWrite" />
         <activity android:name=".VolunteerMain" />
         <activity android:name=".UserMain" />
