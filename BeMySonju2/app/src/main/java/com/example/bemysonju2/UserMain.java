@@ -22,7 +22,7 @@ public class UserMain extends AppCompatActivity {
         btn_fd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UserMain.this, FeedWrite.class);
+                Intent intent = new Intent(UserMain.this, FeedList.class);
                 startActivity(intent);
             }
         });
