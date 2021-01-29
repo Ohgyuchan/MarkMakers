@@ -28,13 +28,13 @@
 #### 주요 기능
     로그인, 도움피드, 영상통화, 화면 공유
 #### 프로토타입
-1. 앱 시작화면
+1. 앱 시작화면  
 ![title](./assets/images/mm_img/main.png)
-2. 유저메인
+2. 유저메인  
 ![title](./assets/images/mm_img/user.png)
-3. 봉사자 로그인
+3. 봉사자 로그인  
 [title](./assets/images/mm_img/login.png)
-4. 회원가입
+4. 회원가입  
 ![title](./assets/images/mm_img/register.png)
 5. 도움 피드  
 ![title](./assets/images/mm_img/list.png)
