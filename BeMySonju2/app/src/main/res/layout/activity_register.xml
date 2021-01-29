@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_vol_reg_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="봉사자 회원가입"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/tv_vol_reg_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_vol_reg_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vol_reg_title"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/tv_vol_reg_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_vol_reg_id"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vol_reg_id"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/tv_vol_reg_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_vol_reg_pw"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vol_reg_pw"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/tv_vol_reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_vol_reg_nickname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vol_reg_nickname"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/tv_vol_reg_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="휴대폰"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_vol_reg_email"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vol_reg_email"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/et_vol_reg_id"
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_vol_reg_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_vol_reg_id"
+        app:layout_constraintTop_toTopOf="@+id/tv_vol_reg_id" />
+
+    <EditText
+        android:id="@+id/et_vol_reg_pw"
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_vol_reg_pw"
+        app:layout_constraintStart_toStartOf="@+id/et_vol_reg_id"
+        app:layout_constraintTop_toTopOf="@+id/tv_vol_reg_pw" />
+
+
+    <EditText
+        android:id="@+id/et_vol_reg_nickname"
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_vol_reg_nickname"
+        app:layout_constraintStart_toStartOf="@+id/et_vol_reg_pw"
+        app:layout_constraintTop_toTopOf="@+id/tv_vol_reg_nickname" />
+
+    <EditText
+        android:id="@+id/et_vol_reg_email"
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_vol_reg_email"
+        app:layout_constraintStart_toStartOf="@+id/et_vol_reg_nickname"
+        app:layout_constraintTop_toTopOf="@+id/tv_vol_reg_email" />
+
+    <EditText
+        android:id="@+id/et_vol_reg_cp"
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_vol_reg_cp"
+        app:layout_constraintStart_toStartOf="@+id/et_vol_reg_email"
+        app:layout_constraintTop_toTopOf="@+id/tv_vol_reg_cp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vol_reg_title"
+        app:layout_constraintVertical_bias="0.7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
