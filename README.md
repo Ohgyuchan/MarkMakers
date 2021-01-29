@@ -29,13 +29,13 @@
     로그인, 도움피드, 영상통화, 화면 공유
 #### 프로토타입
 1. 로그인  
-![title](./../assets/images/mm_img/1.png)
+![title](./assets/images/mm_img/1.png)
 2. 도움 피드  
-![title](./../assets/images/mm_img/2.png)
+![title](./assets/images/mm_img/2.png)
 3. 도움 피드 글쓰기 및 보기  
-![title](./../assets/images/mm_img//3.png)
+![title](./assets/images/mm_img//3.png)
 4. 영상통화 하기  
-![title](./../assets/images/mm_img//4.png)
+![title](./assets/images/mm_img//4.png)
 
 #### 간트차트
 
