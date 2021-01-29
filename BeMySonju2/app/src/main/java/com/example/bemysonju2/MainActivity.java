@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         btn_main_vr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, VolunteerMain.class);
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });

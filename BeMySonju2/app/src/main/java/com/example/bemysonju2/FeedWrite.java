@@ -41,8 +41,8 @@ public class FeedWrite extends AppCompatActivity {
 
                 Intent intent = new Intent(FeedWrite.this, FeedList.class);
 
-                intent.putExtra("title", title);
-                intent.putExtra("contents", contents);
+                //intent.putExtra("title", title);
+                //intent.putExtra("contents", contents);
                 startActivity(intent);
             }
         });

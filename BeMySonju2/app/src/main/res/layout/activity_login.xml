@@ -77,7 +77,7 @@
         app:layout_constraintHorizontal_bias="0.8"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_login"
         android:backgroundTint="@color/mint"
         android:textColor="@color/black"
         android:layout_width="wrap_content"

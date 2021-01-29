@@ -11,12 +11,20 @@ import android.widget.ImageButton;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private ImageButton btn_main_user;
-    private Button btn_main_vr;
+    private Button btn_login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        btn_login = findViewById(R.id.btn_login);
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, VolunteerMain.class);
+                startActivity(intent);
+            }
+        });
     }
 }
