@@ -28,15 +28,32 @@
 #### 주요 기능
     로그인, 도움피드, 영상통화, 화면 공유
 #### 프로토타입
-1. 로그인  
-![title](./assets/images/mm_img/1.png)
-2. 도움 피드  
-![title](./assets/images/mm_img/2.png)
-3. 도움 피드 글쓰기 및 보기  
-![title](./assets/images/mm_img//3.png)
-4. 영상통화 하기  
-![title](./assets/images/mm_img//4.png)
+1. 앱 시작화면
+![title](./assets/images/mm_img/main.png)
+2. 유저메인
+![title](./assets/images/mm_img/user.png)
+3. 봉사자 로그인
+[title](./assets/images/mm_img/login.png)
+4. 회원가입
+![title](./assets/images/mm_img/register.png)
+5. 도움 피드  
+![title](./assets/images/mm_img/list.png)
+6. 도움 피드 글쓰기 및 보기  
+![title](./assets/images/mm_img//write.png)
+7. 영상통화 하기  
+![title](./assets/images/mm_img//videocall.png)
 
-#### 간트차트
+## 개발 일정 (2.1 이후)
 
-
+#### 완료사항
+  1. AppRTC API 적용해보기 (완료)
+  2. 기초 UI
+>   (1) 앱 시작화면  
+>   (2) 로그인 화면  
+>   (3) 게시판 피드 화면  
+>   (4) 앱 메인 화면  
+#### 기능별 예정사항 (2.1 이후)
+1. 회원 DB, 로그인, 회원가입 기능(~2.5)
+2. 게시판 기능, DB 연결(~2.7)
+3. 앱 내 유저 간 영상통화(~2.9)
+4. 화면 공유 (~ 2.13)
