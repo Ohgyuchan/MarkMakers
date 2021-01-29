@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BeMySonju2">
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".LoginActivity">
         <activity android:name=".FeedList"></activity>
         <activity android:name=".VcActivity"></activity>
         <activity android:name=".FeedWrite" />
