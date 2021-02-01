@@ -12,6 +12,7 @@
 * 박규경(17학번 컴공심화)
 * 오규찬(17학번 컴공심화)
 
+# 능력부족으로 프로젝트 개발 보류....
 ## 프로젝트 소개
 #### [Be My 손주](https://github.com/Ohgyuchan/BeMySonju.git):WebRTC, AppRTC를 이용한 실시간 카메라 공유 어플리케이션
 #### 문제 상황 배경
