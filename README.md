@@ -12,4 +12,5 @@
 * 오규찬(17학번 컴공심화)
 
 ## 프로젝트
-##
+ 1. [BeMySonJu(~2.1)](./BeMySonju.md)
+ 2. [듣는 편지( ~ )](./ListentinLetter.md)
