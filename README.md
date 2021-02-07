@@ -13,4 +13,4 @@
 
 ## 프로젝트
  1. [BeMySonJu(~2.1)](./BeMySonju.md)
- 2. [듣는 편지(2.2 ~ )](./ListentinLetter.md)
+ 2. [듣는 편지(2.2 ~ )](./ListentingLetter.md)
