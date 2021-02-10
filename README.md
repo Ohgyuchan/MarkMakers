@@ -1,5 +1,5 @@
 # 2020 시선 신입 MarkMakers
-![team_log](team_logo/logo.png)
+![team_log](team_logo/logo.png){: width="100" height="100"}
 ## MarkMakers 소개
 #### 팀명: MarkMakers
      '한 획을 긋는 사람들' 이라는 뜻에서
