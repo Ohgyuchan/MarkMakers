@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:listeningletters/screen/my_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -10,14 +11,13 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  TabController controller;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Listening Letters',
       theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: Colors.black,
+        brightness: Brightness.light,
+        primaryColor: Color(0xff212325),
         accentColor: Colors.white,
       ),
       home: Scaffold(
@@ -50,25 +50,29 @@ class _MyAppState extends State<MyApp> {
                         fontSize: 30,
                       ),
                     ),
-                    onPressed: searchScreen,
+                    onPressed: _searchScreen,
                     textColor: Colors.white,
-                    color: Colors.black,
+                    color: Color(0xff212325),
                   ),
                 ),
                 Container(
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 50),
                   width: 250,
                   height: 150,
-                  child: RaisedButton(
-                    child: Text(
-                      '내 스토리',
-                      style: TextStyle(
-                        fontSize: 30,
+                  child: Builder(
+                    builder: (context) => RaisedButton(
+                      child: Text(
+                        '내 스토리',
+                        style: TextStyle(
+                          fontSize: 30,
+                        ),
                       ),
+                      onPressed: () {
+                        _myScreen(context);
+                      },
+                      textColor: Colors.white,
+                      color: Color(0xff212325),
                     ),
-                    onPressed: myScreen,
-                    textColor: Colors.white,
-                    color: Colors.black,
                   ),
                 ),
               ],
@@ -79,11 +83,14 @@ class _MyAppState extends State<MyApp> {
     );
   }
 
-  void searchScreen() {
+  void _searchScreen() {
     print('searchScreen clicked!');
   }
 
-  void myScreen() {
+  void _myScreen(BuildContext context) {
     print('myScreen clicked!');
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (context) => MyScreen()),
+    );
   }
 }
