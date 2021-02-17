@@ -23,6 +23,7 @@ environment:
 dependencies:
   cloud_firestore: ^0.16.0
   firebase_core: ^0.7.0
+  firebase_auth: ^0.20.0+1
   flutter:
     sdk: flutter
 
@@ -56,6 +57,8 @@ flutter:
     - assets/user.png
     - assets/letter.png
     - assets/jjunii.gif
+    - assets/login.png
+    - assets/register.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
