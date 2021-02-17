@@ -21,9 +21,6 @@ class _MyAppState extends State<MyApp> {
         accentColor: Colors.white,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('듣는 편지'),
-        ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
