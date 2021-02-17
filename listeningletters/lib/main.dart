@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
       title: 'Listening Letters',
       theme: ThemeData(
         brightness: Brightness.light,
-        primaryColor: Color(0xff212325),
+        primaryColor: Color(0xFF2C2F31),
         accentColor: Colors.white,
       ),
       home: Scaffold(
@@ -41,37 +41,45 @@ class _MyAppState extends State<MyApp> {
               children: <Widget>[
                 Container(
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 50),
-                  width: 250,
-                  height: 150,
-                  child: RaisedButton(
-                    child: Text(
-                      '검 색',
-                      style: TextStyle(
-                        fontSize: 30,
+                  child: SizedBox(
+                    width: 300,
+                    height: 100,
+                    child: Builder(
+                      builder: (context) => FloatingActionButton.extended(
+                        heroTag: "search_btn",
+                        tooltip: '검색!',
+                        backgroundColor: Color(0xFF2C2F31),
+                        label: Text(
+                          '검 색',
+                          style: TextStyle(color: Colors.white, fontSize: 30),
+                        ),
+                        onPressed: () {
+                          _searchScreen();
+                        },
+                        // textColor: Colors.white,
                       ),
                     ),
-                    onPressed: _searchScreen,
-                    textColor: Colors.white,
-                    color: Color(0xff212325),
                   ),
                 ),
                 Container(
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 50),
-                  width: 250,
-                  height: 150,
-                  child: Builder(
-                    builder: (context) => RaisedButton(
-                      child: Text(
-                        '내 스토리',
-                        style: TextStyle(
-                          fontSize: 30,
+                  child: SizedBox(
+                    width: 300,
+                    height: 100,
+                    child: Builder(
+                      builder: (context) => FloatingActionButton.extended(
+                        heroTag: "my_btn",
+                        tooltip: '내 스토리!',
+                        backgroundColor: Color(0xFF2C2F31),
+                        label: Text(
+                          '내 스토리',
+                          style: TextStyle(color: Colors.white, fontSize: 30),
                         ),
+                        onPressed: () {
+                          _myScreen(context);
+                        },
+                        // textColor: Colors.white,
                       ),
-                      onPressed: () {
-                        _myScreen(context);
-                      },
-                      textColor: Colors.white,
-                      color: Color(0xff212325),
                     ),
                   ),
                 ),
