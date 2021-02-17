@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:listeningletters/screen/edit_profile.dart';
 
 class MyScreen extends StatelessWidget {
   @override
@@ -49,25 +50,30 @@ class MyScreen extends StatelessWidget {
                   ),
                   Container(
                     padding: EdgeInsets.all(10),
-                    child: FlatButton(
-                      onPressed: () {},
-                      child: Container(
-                        color: Color(0xff212325),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Icon(
-                              Icons.edit,
-                              color: Colors.white,
-                            ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Text(
-                              '프로필 수정하기',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ],
+                    child: Builder(
+                      builder: (context) => FlatButton(
+                        onPressed: () {
+                          print('프로필 수정!');
+                          _editProfile(context);
+                        },
+                        child: Container(
+                          color: Color(0xff212325),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Icon(
+                                Icons.edit,
+                                color: Colors.white,
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text(
+                                '프로필 수정하기',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -80,4 +86,10 @@ class MyScreen extends StatelessWidget {
       ),
     );
   }
+}
+
+void _editProfile(BuildContext context) {
+  Navigator.of(context).push(
+    MaterialPageRoute(builder: (context) => EditProfile()),
+  );
 }
