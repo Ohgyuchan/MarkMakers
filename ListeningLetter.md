@@ -18,7 +18,7 @@
     4. 실시간 보이스 스트리밍
     
 #### 5. 결과물
-a. 소스코드 : (ListeningLetters)[https://github.com/Ohgyuchan/MarkMakers/tree/master/ex_widget]
+a. 소스코드 : {ListeningLetters}[https://github.com/Ohgyuchan/MarkMakers/tree/master/ex_widget]  
 b. 어플 실행 캡쳐 :
 
 
