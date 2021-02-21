@@ -20,8 +20,9 @@
 #### 5. 결과물
 a. 소스코드 : [ListeningLetters](https://github.com/Ohgyuchan/MarkMakers/tree/master/ex_widget)  
 b. 어플 실행 캡쳐 :
-![title](./assets/images/mm_img/LL1.png)
-![title](./assets/images/mm_img/LL2.png)
+![title](./assets/images/mm_img/LL1.png)  
+![title](./assets/images/mm_img/LL2.png)  
+![title](./assets/images/mm_img/LL3.png)  
 
 ## 개발 일정 (2.8 이후)
 
