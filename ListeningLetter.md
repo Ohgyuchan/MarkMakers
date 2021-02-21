@@ -20,7 +20,8 @@
 #### 5. 결과물
 a. 소스코드 : [ListeningLetters](https://github.com/Ohgyuchan/MarkMakers/tree/master/ex_widget)  
 b. 어플 실행 캡쳐 :
-
+![title](./assets/images/mm_img/LL1.png)
+![title](./assets/images/mm_img/LL2.png)
 
 ## 개발 일정 (2.8 이후)
 
@@ -35,6 +36,6 @@ b. 어플 실행 캡쳐 :
 #### 기능별 예정사항 (2.8 이후)
 ##### 1. ~~회원 DB, 로그인, 회원가입 기능(~)완료~~
 ##### 2. ~~게시판 기능, DB 연결(~)완료~~
-##### 3. 녹음파일 업로드 앱 내 구현(~)
-##### 4. 검색기능(~)
+##### 3. 녹음파일 업로드 앱 내 구현(21-1 1주차)
+##### 4. 검색기능(21-1 2주차)
 
