@@ -8,10 +8,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'validators.dart';
 import 'home.dart';
 
 final FirebaseAuth _auth = FirebaseAuth.instance;
+final GoogleSignIn googleSignIn = GoogleSignIn();
 
 /// Entrypoint example for various sign-in flows with Firebase.
 class SignInPage extends StatefulWidget {
@@ -153,25 +155,40 @@ class _SignInPageState extends State<SignInPage> {
                         color: Colors.white,
                         borderRadius:
                             BorderRadius.only(topRight: Radius.circular(30))),
-                    child: Container(
-                      width: 200,
-                      height: 100,
-                      child: RaisedButton(
-                        elevation: 10,
-                        shape: RoundedRectangleBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(10))),
-                        color: Color(0xFF2C2F31),
-                        onPressed: () async {
-                          if (_formKey.currentState.validate()) {
-                            await _signInWithEmailAndPassword(ctx);
-                          }
-                        },
-                        child: Text(
-                          '로그인',
-                          style: TextStyle(color: Colors.white, fontSize: 30),
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 200,
+                          height: 50,
+                          child: RaisedButton(
+                            elevation: 10,
+                            shape: RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10))),
+                            color: Color(0xFF2C2F31),
+                            onPressed: () async {
+                              if (_formKey.currentState.validate()) {
+                                 await _signInWithEmailAndPassword(ctx);
+                              }
+                            },
+                            child: Text(
+                              '로그인',
+                              style: TextStyle(color: Colors.white, fontSize: 30),
+                            ),
+                          ),
                         ),
-                      ),
+                        Container(
+                          width: 200,
+                          height: 30,
+                          child: TextButton.icon(
+                            label: Text('구글로그인'),
+                            icon: Icon(Icons.android),
+                            onPressed: () async {
+                              await _googleSignin(ctx);
+                            },
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -200,8 +217,7 @@ class _SignInPageState extends State<SignInPage> {
       final User user = (await _auth.signInWithEmailAndPassword(
         email: _emailController.text,
         password: _passwordController.text,
-      ))
-          .user;
+      )).user;
 
       Scaffold.of(ctx).showSnackBar(
         SnackBar(
@@ -214,6 +230,34 @@ class _SignInPageState extends State<SignInPage> {
       Scaffold.of(ctx).showSnackBar(
         const SnackBar(
           content: Text('로그인에 실패했습니다! 이메일 또는 비밀번호를 확인해주세요!'),
+        ),
+      );
+    }
+  }
+
+  Future<void> _googleSignin(BuildContext context) async {
+    try {
+      GoogleSignInAccount account = await googleSignIn.signIn();
+      GoogleSignInAuthentication authentication = await account.authentication;
+
+      AuthCredential credential = GoogleAuthProvider.credential(
+          idToken: authentication.idToken,
+          accessToken: authentication.accessToken );
+
+      UserCredential authResult = await _auth.signInWithCredential(credential);
+      User user = authResult.user;
+      Scaffold.of(context).showSnackBar(
+        SnackBar(
+          content: Text('${user.email} 성공적으로 로그인이 되었습니다!'),
+        ),
+      );
+      Navigator.pop(context);
+      _pushPage(context, MyApp());
+    }
+    catch (e) {
+      Scaffold.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('로그인에 실패했습니다! 구글계정을 확인해주세요!'),
         ),
       );
     }
