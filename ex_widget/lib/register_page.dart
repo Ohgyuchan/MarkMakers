@@ -243,8 +243,8 @@ class _RegisterPageState extends State<RegisterPage> {
                     topRight: Radius.circular(30),
                   ),
                 ),
-                child: RaisedButton(
-                  color: Color(0xFF2C2F31),
+                child: ElevatedButton(
+                  //style: Color(0xFF2C2F31),
                   onPressed: () async {
                     if (_formKey.currentState.validate()) {
                       await _register(context);
